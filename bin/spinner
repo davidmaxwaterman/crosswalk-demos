@@ -1,0 +1,12 @@
+#!/bin/bash
+
+declare -a spinstr=('|' '/' '-' '\\');
+i=0;
+
+while read; do
+  /bin/echo -ne ${spinstr[$i]}'\b';
+  i=$(($i+1));
+  if [ "$i" -eq  "4" ]; then
+    i=0;
+  fi;
+done < <(cat "$@");

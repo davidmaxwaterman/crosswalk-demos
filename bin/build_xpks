@@ -1,0 +1,20 @@
+#! /bin/bash
+
+make_xpk=$CROSSWALKDEMOSBIN/make_xpk.py;
+
+if [[ $# -eq 0 ]]; then
+    pushd ~/z/webapps;
+    apps=$(ls -1d webapps-*/ | sed 's?/$??');
+    popd;
+else
+    apps=$*;
+fi
+
+for app in $apps;
+do
+    name=${app/webapps-/}
+    root=$WEBAPPSCLONESDIR/$app/build/wgt
+    upper_name=$(awk '/"name"/ { print $2 }' $WEBAPPSCLONESDIR/$app/package.json | tr -d '[",]')
+    version=$(awk '/"version"/ { print $2 }' $WEBAPPSCLONESDIR/$app/package.json | tr -d '[",]')
+    $make_xpk $WEBAPPSCLONESDIR/$app/build/xpk/ $WEBAPPSCLONESDIR/$app/data/tizen-xpk/signature -o $CROSSWALKDEMOSROOT/xpks/${upper_name}_${version}.xpk
+done
