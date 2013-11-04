@@ -3,7 +3,61 @@
 	url = https://github.com/01org/webapps-memory-game-older-kids
 [submodule "HangOnMan/src"]
 	path = HangOnMan/src
-	url = https://github.com/01org/webapps-hangonman
+	url = git@github.com:01org/webapps-hangonman.git
 [submodule "HexGL/src"]
 	path = HexGL/src
 	url = https://github.com/BKcore/HexGL.git
+[submodule "Annex/src"]
+	path = Annex/src
+	url = git@github.com:01org/webapps-annex.git
+[submodule "Bubblewrap/src"]
+	path = Bubblewrap/src
+	url = git@github.com:01org/webapps-bubblewrap.git
+[submodule "CountingBeads/src"]
+	path = CountingBeads/src
+	url = git@github.com:01org/webapps-countingbeads.git
+[submodule "Flashcards/src"]
+	path = Flashcards/src
+	url = git@github.com:01org/webapps-flashcards.git
+[submodule "Go/src"]
+	path = Go/src
+	url = git@github.com:01org/webapps-go.git
+[submodule "MakeAMonster/src"]
+	path = MakeAMonster/src
+	url = git@github.com:01org/webapps-make-a-monster.git
+[submodule "Mancala/src"]
+	path = Mancala/src
+	url = git@github.com:01org/webapps-mancala.git
+[submodule "MemoryGameOlderKids/src"]
+	path = MemoryGameOlderKids/src
+	url = git@github.com:01org/webapps-memory-game-older-kids.git
+[submodule "MemoryMatch/src"]
+	path = MemoryMatch/src
+	url = git@github.com:01org/webapps-memory-match.git
+[submodule "Numeroo/src"]
+	path = Numeroo/src
+	url = git@github.com:01org/webapps-numeroo.git
+[submodule "Rabbit/src"]
+	path = Rabbit/src
+	url = git@github.com:01org/webapps-rabbit.git
+[submodule "Calculator/src"]
+	path = Calculator/src
+	url = git@github.com:01org/webapps-scientific-calculator.git
+[submodule "ShoppingList/src"]
+	path = ShoppingList/src
+	url = git@github.com:01org/webapps-shopping-list.git
+[submodule "SliderPuzzle/src"]
+	path = SliderPuzzle/src
+	url = git@github.com:01org/webapps-slider-puzzle.git
+[submodule "SweetSpot/src"]
+	path = SweetSpot/src
+	url = git@github.com:01org/webapps-sweetspot.git
+[submodule "Tenframe/src"]
+	path = Tenframe/src
+	url = git@github.com:01org/webapps-tenframe.git
+[submodule "TodoList/src"]
+	path = TodoList/src
+	url = git@github.com:01org/webapps-todo-list.git
+[submodule "Wordswarm/src"]
+	path = Wordswarm/src
+	url = git@github.com:01org/webapps-wordswarm.git
