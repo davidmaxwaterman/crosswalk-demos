@@ -84,21 +84,18 @@ def RevertPatches(current_real_path, app):
   RevertPatchFiles(current_real_path, app)
 
 
-def CopyManifestFile(current_real_path, app):
-  jsonfile = os.path.join(current_real_path, app, 'manifest.json')
-  src_folder = os.path.join(current_real_path, app, 'src')
-  target_jsonfile = os.path.join(src_folder, 'manifest.json')
-  renamed_jsonfile = os.path.join(src_folder, '_original_manifest.json_')
-  # Check whether manifest.json exists in webapp folder.
-  if os.path.exists(jsonfile):
-    # We need to copy manifest.json to src folder.
-    # Check whether there is manifest.json under src.
-    if os.path.exists(target_jsonfile):
-      # Rename current manifest.json.
-      shutil.move(target_jsonfile, renamed_jsonfile)
-    # Copy manifest.json to src.
-    shutil.copy2(jsonfile, target_jsonfile)
-
+def FixUpApp(current_real_path, app):
+  # cd to submodule dir.
+  previous_cwd = os.getcwd()
+  os.chdir(os.path.join(current_real_path, app))
+  # Run the fixup script.
+  proc = subprocess.Popen(['./fixup'],
+                          stdout=subprocess.PIPE,
+                          stderr=subprocess.STDOUT)
+  out, _ = proc.communicate()
+  print out
+  # Revert cd.
+  os.chdir(previous_cwd)
 
 def FindPatchFiles(current_real_path, app, patch_list):
   app_path = os.path.join(current_real_path, app)
@@ -163,7 +160,7 @@ def ApplyPatchFiles(current_real_path, app):
 
 def ApplyPatches(current_real_path, app):
   ApplyPatchFiles(current_real_path, app)
-  CopyManifestFile(current_real_path, app)
+  FixUpApp(current_real_path, app)
 
 
 def BuildApps(func, current_real_path, app_list, build_result):

@@ -1,0 +1,54 @@
+Below is the email exchange requesting permission to use the icon, and also the app subject to not publising it on a marketplace and retaining attribution.
+
+
+On 05/11/13 18:44, Thibaut Despoulain wrote:
+> You’ll find everything you need in the ffos-local branch on the HexGL repo.
+> https://github.com/BKcore/HexGL/tree/ffos-local
+> While not officially released, this version (originally written for the FirefoxOS ppl) have some icons, support for touchscreen and accelerometer controls and a mobile-optimized graphic pipeline. It also have a menu screen (which you may edit to match your branding since right now it shows some FirefoxOS branding).
+> As long as you do not publish it on a marketplace and retain proper attribution, you can use it on your projects ;)
+> Cheers,
+> Thibaut.
+> -- 
+> WebGL guru @Artillery
+> Mail: thibaut@artillery.com
+> Tweet: @BKcore
+> From: max.waterman@intel.com max.waterman@intel.com
+> Reply: max.waterman@intel.com max.waterman@intel.com
+> Date: November 5, 2013 at 8:49:49 AM
+> To: Thibaut Despoulain contact@bkcore.com
+> Subject:  Re: app icon - permission to use image from web site
+>> On 05/11/13 16:36, Thibaut Despoulain wrote:
+>> > Sure, what would that be for exactly?
+>>
+>> I want to make a packaged app for android and tizen, in order to
+>> demonstrate crosswalk :
+>>
+>> <https://crosswalk-project.org/>
+>>
+>> Currently, I am simply submoduling your github repository into our
+>> repository :
+>>
+>> <https://github.com/crosswalk-project/crosswalk-demos>
+>>
+>> but I would imagine that it might appear on the above crosswalk website
+>> at some point. We would, of course, maintain attribution to satisfy your
+>> license requirements - we're hoping to use it to show crosswalk can
+>> handle a complicated html5 applications.
+>>
+>> Do you have any specific requirements for HexGL and/or the icon that I
+>> should be aware of?
+>>
+>> Thanks,
+>>
+>> Max.
+>>
+>>
+>> > Thibaut.
+>> >
+>> > CGI-Mailer <cgi-mailer@kundenserver.de> wrote:
+>> >
+>> > From: max.waterman@intel.com (Max Waterman) Hi, It seems like there's  
+>> > no icon for your app, but I see this image :  
+>> > &lt;http://hexgl.bkcore.com/thumbs/hexmki.png&gt; which seems  
+>> > suitable. Could you give me permission to use it? thanks, Max.  
+
